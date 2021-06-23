@@ -1,0 +1,30 @@
+@import '../../styles/settings.scss';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-text;
+}
+
+.formControl {
+    width: 350px;
+    margin: 0.5*$base-size auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formInput {
+    &:focus {
+        background-color: $color-focus;
+    }
+    outline: none;
+    border: 0px;
+    height: $base-size;
+    color: $color-text;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
