@@ -17,7 +17,7 @@
 
 .formInput {
     &:focus {
-        background-color: $color-focus;
+        box-shadow: 4px 4px $color-focus;
     }
     outline: none;
     border: 0px;

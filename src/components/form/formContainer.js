@@ -30,7 +30,7 @@ class FormPage extends React.Component {
         values.diameter = '';
         values.slices_of_bread = '';
 
-        fetch('https://cool-river-3464.getsandbox.com/users', requestOptions)
+        fetch('https://frosty-wood-6558.getsandbox.com:443/dishes', requestOptions)
         .then(async response => {
             const isJson = response.headers.get('content-type')?.includes('application/json');
             const data = isJson && await response.json();
